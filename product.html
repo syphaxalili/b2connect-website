@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARGEUR ADAPTABLE POUR LENOVO Thinkpad R500 Series</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- FlatIcon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <!-- Style CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="desktop-content">
+            <div class="upper-header">
+                <div class="container">
+                    <div class="free-shipping">
+                        <i class="fi fi-ts-shipping-fast"></i>
+                        <p>Commandez maintenant et profitez de notre livraison gratuite!</p>
+                    </div>
+                    <div class="phone-number">
+                        <a href="tel:+338572947382"><i class="fi fi-ts-phone-call"></i>+338 572 947 382</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-header">
+                <div class="container">
+                    <a href="index.html"><img src="assets/imgs/B2CONNECT LOGO.webp" alt="B2CONNECT logo"></a>
+                    <div class="search-bar">
+                        <div class="categories">
+                            <select class="sub-categories">
+                                <option selected>Toutes les catégories</option>
+                                <option>Chargeurs</option>
+                                <option>Batteries</option>
+                            </select>
+                        </div>
+                        <input type="text" class="search-field" placeholder="Rechercher par modèle, référence...">
+                        <button><i class="fi fi-br-search"></i></button>
+                    </div>
+                    <div class="account-cart">
+                        <a href="signin.html">
+                            <i class="fi fi-tr-circle-user"></i>
+                            <p>Mon Compte</p>
+                        </a>
+                        <a href="#" onclick="toggleCartSideBar()">
+                            <i class="fi fi-tr-cart-minus"></i>
+                            <p>Mon panier (0)</p>
+                        </a>
+                        <div class="cart-side-bar">
+                            <div class="header">
+                                <p>Votre panier</p>
+                                <i class="fi fi-rr-cross close-side-bar" onclick="toggleCartSideBar()"></i>
+                            </div>
+                            <div class="products">
+                                <p>Vous n'avez pas encore ajouté de produit !</p>
+                            </div>
+                            <div class="footer">
+                                <div class="subtotal">
+                                    <span>Subtotal: </span>
+                                    <span>&euro;0</span>
+                                </div>
+                                <div class="buttons">
+                                    <a href="cart.html">Voir votre panier</a>
+                                    <a href="checkout.html">Commander</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="down-header">
+                <div class="container">
+                    <div class="products-categories">
+                        <p>Categories produits</p>
+                        <ul class="categories">
+                            <li><a href="store.html">Chargeurs</a></li>
+                            <li><a href="store.html">Batteries</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="store.html">Boutique</a></li>
+                        <li><a href="how-to-choose.html">Comment choisir le bon produit?</a></li>
+                        <li><a href="who-are-we.html">Qui sommes-nous?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-content">
+            <!-- Content for Mobile screens -->
+            <div class="middle-header">
+                <div class="container">
+                    <ul class="side-bar">
+                        <li>
+                            <div class="side-bar-search-bar">
+                                <input type="text" placeholder="Rechercher par modèle, référence...">
+                                <button><i class="fi fi-br-search"></i></button>
+                            </div>
+                        </li>
+                        <li><a href="store.html">Boutique</a></li>
+                        <li><a href="how-to-choose.html">Comment choisir le bon produit?</a></li>
+                        <li><a href="who-are-we.html">Qui sommes-nous?</a></li>
+                    </ul>
+                    <i onclick=showSidebar() class="fi fi-rr-bars-sort open-side-bar"></i>
+                    <i onclick=showSidebar() class="fi fi-rr-cross close-side-bar"></i>
+                    <a href="index.html"><img src="assets/imgs/B2CONNECT LOGO.webp" alt=""></a>
+                    <div class="account-cart">
+                        <a href="signin.html"><i class="fi fi-tr-circle-user"></i></a>
+                        <a href="cart.html"><i class="fi fi-tr-cart-minus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="page-content product">
+        <div class="container">
+            <a href="store.html">
+                <i class="fa-solid fa-angle-left"></i>
+                Retour vers la page de recherche
+            </a>
+            <h2 class="main-heading">Details du produit</h2>
+            <div class="content">
+                <div class="imgs-holder">
+                    <img src="assets/imgs/charger.webp" alt="charger image 1">
+                    <div class="other-imgs">
+                        <img src="assets/imgs/charger.webp" alt="charger image 1">
+                        <img src="assets/imgs/charger2.webp" alt="charger image 2">
+                        <img src="assets/imgs/charger3.webp" alt="charger image 3">
+                        <img src="assets/imgs/charger4.webp" alt="charger image 4">
+
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>CHARGEUR ADAPTABLE POUR LENOVO Thinkpad R500 Series</h3>
+                    <span class="price">&euro;21.00</span>
+                    <h4>Description produit:</h4>
+                    <p>CHARGEUR ADAPTABLE DE MARQUE FRANCAISE (B2CONNECT) Haute Qualité pour PC Portable LENOVO</p>
+                    <h4>Caractéristiques techniques:</h4>
+                    <ul>
+                        <li>
+                            <p><span>Tension de sortie: </span>20V - 4,5A - 90W</p>
+                        </li>
+                        <li>
+                            <p><span>Ampérage de sortie: </span>4,5A</p>
+                        </li>
+                        <li>
+                            <p><span>Taille de l'embout: </span>7,9mm x 5,5mm</p>
+                        </li>
+                        <li>
+                            <p><span>Modèles compatibles: </span>LENOVO Thinkpad serie T, seire X, serie R, ThinkPad
+                                Edge
+                                13 14 15, ...</p>
+                        </li>
+                    </ul>
+                    <h4>Garantie & Livraison:</h4>
+                    <div class="service-quality">
+                        <div class="livraison">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <p>Livré sous 2 à 5 jours ouvrés.</p>
+                        </div>
+                        <div class="garantie">
+                            <i class="fa-solid fa-shield-heart"></i>
+                            <p>Garantie 2 ans</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <div class="ajouter-carte">
+                            <div class="quantity">
+                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                <button class="plus" aria-label="Increase">&plus;</button>
+                            </div>
+                            <a href="#" class="add">Ajouter à la carte</a>
+                        </div>
+                        <a href="cart.html" class="buy">Acheter le produit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="upper-footer">
+            <div class="container">
+                <div class="section">
+                    <h3>
+                        Contactez-nous
+                    </h3>
+                    <div class="content">
+                        <div class="adress">
+                            <i class="fi fi-br-land-layer-location"></i>
+                            <p><a href="https://maps.app.goo.gl/XUmRegKD6DBYuWs58" target="_blank">19 Rue de la
+                                    Fraternité<br>
+                                    93170 Bagnolet, Paris<br>
+                                    France</a></p>
+                        </div>
+                        <div class="phone-number">
+                            <i class="fi fi-ss-phone-call"></i>
+                            <p><a href="tel:+338572947382" target="_blank">+338 572 947 382</a></p>
+                        </div>
+                        <div class="email">
+                            <i class="fi fi-sr-envelope"></i>
+                            <p><a href="mailto:contact@dlhp.fr" target="_blank">contact@dlhp.fr</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3>
+                        Informations
+                    </h3>
+                    <ul class="links">
+                        <li><a href="store.html">Boutique</a></li>
+                        <li><a href="how-to-choose.html">Comment choisir le bon produit ?</a></li>
+                        <li><a href="who-are-we.html">Qui sommes-nous?</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>
+                        Nos transporteurs
+                    </h3>
+                    <div class="imgs-holder">
+                        <img src="assets/imgs/transp-poste.png" alt="la poste logo">
+                        <img src="assets/imgs/transp-chrono.png" alt="Chronopost logo">
+                        <img src="assets/imgs/transp-coliss.png" alt="Colissimo logo">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <ul class="payment-methods">
+                    <li><i class="fa-solid fa-credit-card"></i></li>
+                    <li><i class="fa-brands fa-cc-visa"></i></li>
+                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li><i class="fa-brands fa-cc-paypal"></i></li>
+                </ul>
+                <p>&copy; 2024 COPYRIGHT - B2CONNECT | This template is made with <i class="fa-solid fa-heart"></i> by Syphax ALILI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product quantity increment selector
+        (function () {
+            const quantityContainer = document.querySelector(".quantity");
+            const minusBtn = quantityContainer.querySelector(".minus");
+            const plusBtn = quantityContainer.querySelector(".plus");
+            const inputBox = quantityContainer.querySelector(".input-box");
+
+            updateButtonStates();
+
+            quantityContainer.addEventListener("click", handleButtonClick);
+            inputBox.addEventListener("input", handleQuantityChange);
+
+            function updateButtonStates() {
+                const value = parseInt(inputBox.value);
+                minusBtn.disabled = value <= 1;
+                plusBtn.disabled = value >= parseInt(inputBox.max);
+            }
+
+            function handleButtonClick(event) {
+                if (event.target.classList.contains("minus")) {
+                    decreaseValue();
+                } else if (event.target.classList.contains("plus")) {
+                    increaseValue();
+                }
+            }
+
+            function decreaseValue() {
+                let value = parseInt(inputBox.value);
+                value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+                inputBox.value = value;
+                updateButtonStates();
+                handleQuantityChange();
+            }
+
+            function increaseValue() {
+                let value = parseInt(inputBox.value);
+                value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+                inputBox.value = value;
+                updateButtonStates();
+                handleQuantityChange();
+            }
+
+            function handleQuantityChange() {
+                let value = parseInt(inputBox.value);
+                value = isNaN(value) ? 1 : value;
+
+                // Execute your code here based on the updated quantity value
+                console.log("Quantity changed:", value);
+            }
+        })();
+
+
+        // Function to toggle cart sidebar
+        function toggleCartSideBar() {
+            var cartSideBar = document.querySelector('.cart-side-bar');
+            if (cartSideBar) {
+                if (cartSideBar.style.width === '300px') {
+                    cartSideBar.style.width = '0';
+                    setTimeout(function () {
+                        cartSideBar.style.opacity = '0';
+                    }, 230);
+                } else {
+                    cartSideBar.style.width = '300px';
+                    cartSideBar.style.opacity = '1'
+                }
+            }
+        }
+
+        // Function to toggle visibility based on screen width
+        function toggleContent() {
+            var desktopContent = document.querySelector('.desktop-content');
+            var mobileContent = document.querySelector('.mobile-content');
+
+            if (window.innerWidth < 777) {
+                desktopContent.style.display = 'none';
+                mobileContent.style.display = 'block';
+            } else {
+                desktopContent.style.display = 'block';
+                mobileContent.style.display = 'none';
+            }
+        }
+        // Call the function initially and on window resize
+        toggleContent();
+        window.addEventListener('resize', toggleContent);
+
+        // Show sidebar function
+        function showSidebar() {
+            const sidebar = document.querySelector('.side-bar')
+            const open_sidebar_icon = document.querySelector('i.open-side-bar')
+            const close_sidebar_icon = document.querySelector('i.close-side-bar')
+            if (sidebar.style.display == 'flex') {
+                sidebar.style.display = 'none'
+                open_sidebar_icon.style.display = 'block'
+                close_sidebar_icon.style.display = 'none'
+            } else {
+                sidebar.style.display = 'flex'
+                open_sidebar_icon.style.display = 'none'
+                close_sidebar_icon.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>
