@@ -1734,6 +1734,10 @@ footer .bottom-footer .container p {
 
 .page-content.forget-password .container .content form input:focus {
   border-color: var(--color-blue-main-light);
+  padding: 10px 15px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: var(--color-yellow);
 }
 
 .page-content.forget-password .container .back-loggin {
